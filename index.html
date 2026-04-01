@@ -77,9 +77,6 @@
       font-size: 15px;
       transition: 0.25s;
     }
-    .links a:hover {
-      background: var(--border);
-    }
     .links a svg {
       width: 20px;
       height: 20px;
@@ -122,6 +119,72 @@
       background: var(--border);
     }
 
+    /* Accent line under name */
+    .accent-line {
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent), #a78bfa);
+      border-radius: 2px;
+      margin: 10px auto 0;
+    }
+
+    /* Link hover lift */
+    .links a:hover {
+      background: var(--border);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    /* Skill hover */
+    .skills span {
+      transition: 0.25s;
+      cursor: default;
+    }
+    .skills span:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    /* Project cards */
+    .projects ul {
+      list-style: none;
+      padding: 0;
+    }
+    .projects li {
+      padding: 14px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      margin: 10px 0;
+      transition: 0.25s;
+    }
+    .projects li:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .projects a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .projects a:hover {
+      text-decoration: underline;
+    }
+
+    /* Load animations */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate {
+      opacity: 0;
+      animation: fadeUp 0.5s ease forwards;
+    }
+    .animate-delay-1 { animation-delay: 0.1s; }
+    .animate-delay-2 { animation-delay: 0.2s; }
+    .animate-delay-3 { animation-delay: 0.3s; }
+    .animate-delay-4 { animation-delay: 0.4s; }
+    .animate-delay-5 { animation-delay: 0.5s; }
+
     /* Mobile Optimisation */
     @media (max-width: 600px) {
       .container {
@@ -139,13 +202,14 @@
   <button class="dark-toggle" onclick="toggleDarkMode()">🌙 Dark Mode</button>
 
   <div class="container">
-    <div class="header">
+    <div class="header animate">
       <img src="Prakhar Saxena - Profile Photograph.jpg" alt="Prakhar Saxena" class="avatar" loading="lazy">
       <h1>Prakhar Saxena</h1>
-      <p class="subtitle">AI Platforms & Software Engineering Leader</p> <!--•-->
+      <p class="subtitle">AI Platforms & Software Engineering Leader</p>
+      <div class="accent-line"></div>
     </div>
 
-    <div class="section">
+    <div class="section animate animate-delay-1">
       <h2>Quick Links</h2>
       <div class="links">
         <a href="http://linkedin.com/in/prakhar-saxena" target="_blank">
@@ -178,7 +242,7 @@
       </div>
     </div>
 
-    <div class="section">
+    <div class="section animate animate-delay-2">
       <h2>About</h2>
       <p>
         Innovative and result-driven leader with expertise in Artificial Intelligence and full software development lifecycle.
@@ -187,7 +251,7 @@
       </p>
     </div>
 
-    <div class="section">
+    <div class="section animate animate-delay-3">
       <h2>Skills</h2>
       <div class="skills">
         <span>Python</span>
@@ -204,21 +268,23 @@
       </div>
     </div>
 
-    <!-- <div class="section">
+    <div class="section projects animate animate-delay-4">
       <h2>Projects</h2>
       <ul>
-        <li><strong>Ultimate Submission Admin Tool</strong> — One-line summary. <a href="#">Repo</a></li>
-        <li><strong>AI Underwriting Assistant</strong> — One-line summary. <a href="#">Case Study</a></li>
+        <li><strong>SF Crime Classification</strong> — Machine Learning project using SVM, Decision Trees, KNN, and K-Means with PCA to classify San Francisco crime data. <a href="https://github.com/Prakhar-Saxena/CS383-FinalProject" target="_blank">Repo</a></li>
+        <li><strong>Weather &amp; Crime Analysis</strong> — Data science investigation into how weather patterns and socioeconomic factors correlate with urban crime rates. <a href="https://github.com/Prakhar-Saxena/INFO212-FinalProject" target="_blank">Repo</a></li>
+        <li><strong>Project Euler Solutions</strong> — Solutions to mathematical and computational programming challenges in JavaScript. <a href="https://github.com/Prakhar-Saxena/ProjectEulerSolutions" target="_blank">Repo</a></li>
+        <li><strong>College Projects</strong> — Collection of coursework spanning AI, Advanced AI, Machine Learning, Data Mining, Cloud Computing, and more. <a href="https://github.com/Prakhar-Saxena/CollegeAssignments" target="_blank">Repo</a></li>
       </ul>
-    </div> -->
+    </div>
 
-    <div class="section">
+    <div class="section animate animate-delay-5">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:prakharsaxena.social@gmail.com">prakharsaxena.social@gmail.com</a></p>
     </div>
 
     <footer>
-      © 2025 Prakhar Saxena — All rights reserved.
+      © 2026 Prakhar Saxena — All rights reserved.
     </footer>
   </div>
 
