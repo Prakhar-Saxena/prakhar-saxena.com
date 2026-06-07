@@ -170,6 +170,70 @@
       text-decoration: underline;
     }
 
+    /* Experience */
+    .exp-item {
+      padding: 14px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      margin: 10px 0;
+    }
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 6px;
+      font-size: 15px;
+    }
+    .exp-location {
+      color: var(--subtext);
+      font-size: 13px;
+      margin-left: 8px;
+    }
+    .exp-role {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin: 10px 0 4px;
+    }
+    .role-title {
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .role-dates {
+      color: var(--subtext);
+      font-size: 13px;
+      white-space: nowrap;
+      margin-left: 12px;
+    }
+    .role-desc {
+      color: var(--subtext);
+      font-size: 13px;
+      margin: 4px 0 8px;
+      font-style: italic;
+    }
+    .exp-item ul {
+      margin: 6px 0 10px;
+      padding-left: 20px;
+      font-size: 14px;
+    }
+    .exp-item ul li {
+      margin-bottom: 5px;
+      line-height: 1.5;
+    }
+
+    /* Certifications */
+    .cert-list {
+      list-style: none;
+      padding: 0;
+    }
+    .cert-list li {
+      padding: 10px 14px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      margin: 8px 0;
+      font-size: 14px;
+    }
+
     /* Load animations */
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(20px); }
@@ -205,7 +269,8 @@
     <div class="header animate">
       <img src="Prakhar Saxena - Profile Photograph.jpg" alt="Prakhar Saxena" class="avatar" loading="lazy">
       <h1>Prakhar Saxena</h1>
-      <p class="subtitle">AI Platforms & Software Engineering Leader</p>
+      <p class="subtitle">AI Platform & Engineering Leader</p>
+      <p class="subtitle">Strategy, People & Operational Scale</p>
       <div class="accent-line"></div>
     </div>
 
@@ -245,30 +310,133 @@
     <div class="section animate animate-delay-2">
       <h2>About</h2>
       <p>
-        Innovative and result-driven leader with expertise in Artificial Intelligence and full software development lifecycle.
-        Stellar record of success in collaborating with cross functional Agile teams to design, develop, test, implement, and support technical solutions.
-        Delivering meaningful value to our business stakeholders.
+        Engineering and AI platform leader who solves enterprise business problems through <strong>People, Process, and Technology</strong>.
+        Currently lead a 20-person organization—principal and senior engineers, senior business analysts, a product owner, and a team lead—owning
+        the long-term strategy, roadmap, and delivery of UWM's enterprise AI automation platform. Built that platform from the ground up into the
+        company's largest deployment of Google LLMs, generating multimillion-dollar annual savings and returning over a million workhours to the business.
+        Scrum.org Certified Professional Scrum Master driving outcomes across cross-functional Agile teams.
       </p>
     </div>
 
     <div class="section animate animate-delay-3">
       <h2>Skills</h2>
       <div class="skills">
-        <span>Python</span>
-        <span>Google Cloud Platform</span>
+        <span>People Management</span>
+        <span>Long-Term Strategy</span>
+        <span>Org Building & Mentorship</span>
+        <span>Product Ownership</span>
+        <span>Agile — Scrum & Kanban</span>
+        <span>Stakeholder Alignment</span>
         <span>Artificial Intelligence</span>
         <span>Machine Learning</span>
         <span>Large Language Models</span>
         <span>Google Gemini</span>
         <span>Embeddings</span>
-        <span>CloudRun</span>
-        <span>Kubernetes</span>
-        <span>Agile - Scrum & Kanban</span>
+        <span>Application Architecture & System Design</span>
+        <span>Python</span>
+        <span>Java</span>
+        <span>Scala</span>
+        <span>React</span>
         <span>.NET</span>
+        <span>Google Cloud Platform</span>
+        <span>Cloud Run</span>
+        <span>GKE</span>
+        <span>BigQuery</span>
+        <span>Kubernetes</span>
+        <span>Apache Kafka</span>
+        <span>AWS</span>
+        <span>Terraform</span>
+        <span>CI/CD</span>
       </div>
     </div>
 
-    <div class="section projects animate animate-delay-4">
+    <div class="section animate animate-delay-4">
+      <h2>Experience</h2>
+      <div class="experience">
+        <div class="exp-item">
+          <div class="exp-header">
+            <div>
+              <strong>United Wholesale Mortgage (UWM)</strong>
+              <span class="exp-location">Pontiac, MI</span>
+            </div>
+          </div>
+          <div class="exp-role">
+            <span class="role-title">Team Leader — AI Platforms & Product Development</span>
+            <span class="role-dates">Jul 2024 – Present</span>
+          </div>
+          <p class="role-desc">Lead a 20-person organization owning strategy, roadmap, and delivery of UWM's enterprise AI automation platform (BOLT).</p>
+          <ul>
+            <li>Built UWM's document-interrogation automation platform from the ground up — now the largest enterprise deployment of Google LLMs at the company.</li>
+            <li>Delivered ~$4.1M in annualized savings ($346K/month) from a strategic platform optimization.</li>
+            <li>Returned ~1M+ underwriter hours per year to the business (~500 full-time work-years of reclaimed capacity).</li>
+            <li>Architected ML solutions using Google Gemini, custom-trained models, and embeddings across Title Review, Assets, Pay Stubs, Credit Reports, and Appraisals.</li>
+          </ul>
+          <div class="exp-role">
+            <span class="role-title">Software Developer III</span>
+            <span class="role-dates">Mar 2024 – Jul 2024</span>
+          </div>
+          <ul>
+            <li>Led currency-management efforts reducing technical debt and eliminating security vulnerabilities across BOLT services.</li>
+            <li>Led a cohort of summer team members through a full-stack microservices project (React + .NET 8), achieving 75% retention.</li>
+          </ul>
+          <div class="exp-role">
+            <span class="role-title">Data Platform Engineer II</span>
+            <span class="role-dates">Mar 2023 – Mar 2024</span>
+          </div>
+          <ul>
+            <li>Administered an on-premises Confluent Kafka platform at 99.99% availability, processing billions of messages daily.</li>
+            <li>Supported 1,900+ technology professionals integrating with Kafka, Redis, and Qlik; ran the Redis cache at ~4,000 ops/second.</li>
+            <li>Pioneered open-source Kafka adoption and migrated Kafka connectors into Kubernetes via custom Python tooling.</li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <div>
+              <strong>NASDAQ</strong>
+              <span class="exp-location">Philadelphia, PA</span>
+            </div>
+          </div>
+          <div class="exp-role">
+            <span class="role-title">Software Developer</span>
+            <span class="role-dates">Sep 2019 – Mar 2023</span>
+          </div>
+          <ul>
+            <li>Sole maintainer of a full-stack trading application ecosystem at 99.999% availability within an AWS Kubernetes cluster.</li>
+            <li>Designed and built Java/Spring gateways bridging legacy trading frameworks to NASDAQ's consolidated Fusion platform.</li>
+            <li>Delivered back-end services integrating multiple international NASDAQ exchanges through transatlantic (US–Europe) collaboration.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section animate animate-delay-5">
+      <h2>Education</h2>
+      <div class="exp-item">
+        <div class="exp-header">
+          <div>
+            <strong>Drexel University</strong> — College of Computing &amp; Informatics
+            <span class="exp-location">Philadelphia, PA</span>
+          </div>
+        </div>
+        <div class="exp-role">
+          <span class="role-title">B.S. in Computer Science</span>
+          <span class="role-dates">2021</span>
+        </div>
+        <p class="role-desc">Honors College (Pennoni) &bull; Cum Laude, GPA 3.65/4.0<br>
+        Minor in Data Science &bull; Concentration in Artificial Intelligence &bull; Concentration in Computer &amp; Network Security</p>
+      </div>
+    </div>
+
+    <div class="section animate animate-delay-5">
+      <h2>Certifications</h2>
+      <ul class="cert-list">
+        <li><strong>Professional Scrum Master I (PSM I)</strong> — Scrum.org, 2025</li>
+        <li><strong>Leadership Essentials, Professional Certification</strong> — Cornell University, 2023</li>
+      </ul>
+    </div>
+
+    <div class="section projects animate animate-delay-5">
       <h2>Projects</h2>
       <ul>
         <li><strong>SF Crime Classification</strong> — Machine Learning project using SVM, Decision Trees, KNN, and K-Means with PCA to classify San Francisco crime data. <a href="https://github.com/Prakhar-Saxena/CS383-FinalProject" target="_blank">Repo</a></li>
@@ -278,7 +446,7 @@
       </ul>
     </div>
 
-    <div class="section animate animate-delay-5">
+    <div class="section animate animate-delay-5" style="animation-delay:0.6s">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:prakharsaxena.social@gmail.com">prakharsaxena.social@gmail.com</a></p>
     </div>
