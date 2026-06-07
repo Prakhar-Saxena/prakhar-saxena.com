@@ -1,0 +1,82 @@
+<p align="center">
+  <img src="Prakhar%20Saxena%20-%20Profile%20Photograph.jpg" width="140" alt="{{ d.name }}">
+</p>
+
+<h1 align="center">{{ d.name }}</h1>
+
+<p align="center">
+{% for title in d.titles %}
+{{ title }}{% if not loop.last %} &bull; {% endif %}
+{% endfor %}
+</p>
+
+<p align="center">
+  <a href="{{ d.linkedin }}">LinkedIn</a> &bull;
+  <a href="{{ d.github_url }}">GitHub</a> &bull;
+  <a href="{{ d.site }}">Website</a> &bull;
+  <a href="{{ d.resume }}">Resume (PDF)</a>
+</p>
+
+---
+
+## About
+
+{{ d.about }}
+
+---
+
+## Skills
+
+{{ d.skills | join(" &bull; ") }}
+
+---
+
+## Experience
+
+{% for company in d.experience %}
+### {{ company.company }} &mdash; {{ company.location }}
+
+{% for role in company.roles %}
+**{{ role.title }}** &nbsp;*({{ role.dates }})*
+{% if role.description %}
+> {{ role.description }}
+{% endif %}
+
+{% for bullet in role.bullets %}
+- {{ bullet }}
+{% endfor %}
+
+{% endfor %}
+{% endfor %}
+---
+
+## Education
+
+### {{ d.education.school }} &mdash; {{ d.education.college }}
+
+**{{ d.education.degree }}** &nbsp;*({{ d.education.year }})*
+
+{{ d.education.honors }}
+{{ d.education.extras }}
+
+---
+
+## Certifications
+
+{% for cert in d.certifications %}
+- **{{ cert.name }}** &mdash; {{ cert.issuer }}, {{ cert.year }}
+{% endfor %}
+
+---
+
+## Projects
+
+{% for project in d.projects %}
+- **{{ project.name }}** &mdash; {{ project.description }} &nbsp;[Repo]({{ project.repo }})
+{% endfor %}
+
+---
+
+## Contact
+
+Email: [{{ d.email }}](mailto:{{ d.email }})

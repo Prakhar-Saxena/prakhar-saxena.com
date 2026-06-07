@@ -1,0 +1,139 @@
+{
+  "name": "Prakhar Saxena",
+  "photo": "Prakhar Saxena - Profile Photograph.jpg",
+  "titles": [
+    "AI Platform & Engineering Leader",
+    "Strategy, People & Operational Scale"
+  ],
+  "about": "Engineering and AI platform leader who solves enterprise business problems through **People, Process, and Technology**. Currently lead a 20-person organization—principal and senior engineers, senior business analysts, a product owner, and a team lead—owning the long-term strategy, roadmap, and delivery of UWM's enterprise AI automation platform. Built that platform from the ground up into the company's largest deployment of Google LLMs, generating multimillion-dollar annual savings and returning over a million workhours to the business. Scrum.org Certified Professional Scrum Master driving outcomes across cross-functional Agile teams.",
+  "email": "prakharsaxena.social@gmail.com",
+  "linkedin": "http://linkedin.com/in/prakhar-saxena",
+  "github_url": "http://github.com/Prakhar-Saxena",
+  "resume": "Prakhar Saxena - Resume.pdf",
+  "site": "https://prakhar-saxena.com",
+  "skills": [
+    "People Management",
+    "Long-Term Strategy",
+    "Org Building & Mentorship",
+    "Product Ownership",
+    "Agile — Scrum & Kanban",
+    "Stakeholder Alignment",
+    "Artificial Intelligence",
+    "Machine Learning",
+    "Large Language Models",
+    "Google Gemini",
+    "Embeddings",
+    "Application Architecture & System Design",
+    "Python",
+    "Java",
+    "Scala",
+    "React",
+    ".NET",
+    "Google Cloud Platform",
+    "Cloud Run",
+    "GKE",
+    "BigQuery",
+    "Kubernetes",
+    "Apache Kafka",
+    "AWS",
+    "Terraform",
+    "CI/CD"
+  ],
+  "experience": [
+    {
+      "company": "United Wholesale Mortgage (UWM)",
+      "location": "Pontiac, MI",
+      "roles": [
+        {
+          "title": "Team Leader — AI Platforms & Product Development",
+          "dates": "Jul 2024 – Present",
+          "description": "Lead a 20-person organization owning strategy, roadmap, and delivery of UWM's enterprise AI automation platform (BOLT).",
+          "bullets": [
+            "Built UWM's document-interrogation automation platform from the ground up — now the largest enterprise deployment of Google LLMs at the company.",
+            "Delivered ~$4.1M in annualized savings ($346K/month) from a strategic platform optimization.",
+            "Returned ~1M+ underwriter hours per year to the business (~500 full-time work-years of reclaimed capacity).",
+            "Architected ML solutions using Google Gemini, custom-trained models, and embeddings across Title Review, Assets, Pay Stubs, Credit Reports, and Appraisals."
+          ]
+        },
+        {
+          "title": "Software Developer III",
+          "dates": "Mar 2024 – Jul 2024",
+          "description": null,
+          "bullets": [
+            "Led currency-management efforts reducing technical debt and eliminating security vulnerabilities across BOLT services.",
+            "Led a cohort of summer team members through a full-stack microservices project (React + .NET 8), achieving 75% retention."
+          ]
+        },
+        {
+          "title": "Data Platform Engineer II",
+          "dates": "Mar 2023 – Mar 2024",
+          "description": null,
+          "bullets": [
+            "Administered an on-premises Confluent Kafka platform at 99.99% availability, processing billions of messages daily.",
+            "Supported 1,900+ technology professionals integrating with Kafka, Redis, and Qlik; ran the Redis cache at ~4,000 ops/second.",
+            "Pioneered open-source Kafka adoption and migrated Kafka connectors into Kubernetes via custom Python tooling."
+          ]
+        }
+      ]
+    },
+    {
+      "company": "NASDAQ",
+      "location": "Philadelphia, PA",
+      "roles": [
+        {
+          "title": "Software Developer",
+          "dates": "Sep 2019 – Mar 2023",
+          "description": null,
+          "bullets": [
+            "Sole maintainer of a full-stack trading application ecosystem at 99.999% availability within an AWS Kubernetes cluster.",
+            "Designed and built Java/Spring gateways bridging legacy trading frameworks to NASDAQ's consolidated Fusion platform.",
+            "Delivered back-end services integrating multiple international NASDAQ exchanges through transatlantic (US–Europe) collaboration."
+          ]
+        }
+      ]
+    }
+  ],
+  "education": {
+    "school": "Drexel University",
+    "college": "College of Computing & Informatics",
+    "location": "Philadelphia, PA",
+    "degree": "B.S. in Computer Science",
+    "year": "2021",
+    "honors": "Honors College (Pennoni) • Cum Laude, GPA 3.65/4.0",
+    "extras": "Minor in Data Science • Concentration in Artificial Intelligence • Concentration in Computer & Network Security"
+  },
+  "certifications": [
+    {
+      "name": "Professional Scrum Master I (PSM I)",
+      "issuer": "Scrum.org",
+      "year": "2025"
+    },
+    {
+      "name": "Leadership Essentials, Professional Certification",
+      "issuer": "Cornell University",
+      "year": "2023"
+    }
+  ],
+  "projects": [
+    {
+      "name": "SF Crime Classification",
+      "description": "Machine Learning project using SVM, Decision Trees, KNN, and K-Means with PCA to classify San Francisco crime data.",
+      "repo": "https://github.com/Prakhar-Saxena/CS383-FinalProject"
+    },
+    {
+      "name": "Weather & Crime Analysis",
+      "description": "Data science investigation into how weather patterns and socioeconomic factors correlate with urban crime rates.",
+      "repo": "https://github.com/Prakhar-Saxena/INFO212-FinalProject"
+    },
+    {
+      "name": "Project Euler Solutions",
+      "description": "Solutions to mathematical and computational programming challenges in JavaScript.",
+      "repo": "https://github.com/Prakhar-Saxena/ProjectEulerSolutions"
+    },
+    {
+      "name": "College Projects",
+      "description": "Collection of coursework spanning AI, Advanced AI, Machine Learning, Data Mining, Cloud Computing, and more.",
+      "repo": "https://github.com/Prakhar-Saxena/CollegeAssignments"
+    }
+  ]
+}
