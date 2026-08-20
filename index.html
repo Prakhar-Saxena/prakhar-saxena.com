@@ -221,6 +221,36 @@
       line-height: 1.5;
     }
 
+    /* Signature Impact */
+    .impact-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-top: 10px;
+    }
+    .impact-card {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px;
+      transition: 0.25s;
+    }
+    .impact-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .impact-value {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    .impact-label {
+      font-size: 13px;
+      color: var(--subtext);
+      margin-top: 4px;
+      line-height: 1.4;
+    }
+
     /* Certifications */
     .cert-list {
       list-style: none;
@@ -258,6 +288,7 @@
       h1 { font-size: 24px; }
       .subtitle { font-size: 14px; }
       .links a { font-size: 14px; }
+      .impact-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -311,42 +342,68 @@
       <h2>About</h2>
       <p>
         Engineering and AI platform leader who solves enterprise business problems through <strong>People, Process, and Technology</strong>.
-        Currently lead a 20-person organization—principal and senior engineers, senior business analysts, a product owner, and a team lead—owning
+        Currently lead an organization with principal and senior engineers, senior business analysts, a product owner, and a team lead—owning
         the long-term strategy, roadmap, and delivery of UWM's enterprise AI automation platform. Built that platform from the ground up into the
-        company's largest deployment of Google LLMs, generating multimillion-dollar annual savings and returning over a million workhours to the business.
-        Scrum.org Certified Professional Scrum Master driving outcomes across cross-functional Agile teams.
+        company's largest deployment of Google LLMs, generating multimillion-dollar annual savings and returning over a million work-hours to the business.
+        Now executing a second zero-to-one build in parallel—an agentic, spec-driven software development platform piloting across UWM's ~2,000-person
+        IT organization. Scrum.org Certified Professional Scrum Master driving outcomes across cross-functional Agile teams.
       </p>
+    </div>
+
+    <div class="section animate animate-delay-2">
+      <h2>Signature Impact</h2>
+      <div class="impact-grid">
+        <div class="impact-card">
+          <div class="impact-value">$4.1M+</div>
+          <div class="impact-label">Annualized savings through strategic platform optimization ($346K/month).</div>
+        </div>
+        <div class="impact-card">
+          <div class="impact-value">1M+ hrs</div>
+          <div class="impact-label">Work-hours returned annually — ~10 hrs/week across ~2,000 underwriters, roughly 500 full-time work-years of capacity.</div>
+        </div>
+        <div class="impact-card">
+          <div class="impact-value">20-person org</div>
+          <div class="impact-label">Led directly, including senior/principal engineers and a team lead — scope typical of a Director / AVP.</div>
+        </div>
+        <div class="impact-card">
+          <div class="impact-value">2 platforms</div>
+          <div class="impact-label">Conceived and built from zero — an AI business-automation platform, now the largest enterprise use case of Google LLMs at UWM, and an agentic software development platform launched in 2026.</div>
+        </div>
+      </div>
     </div>
 
     <div class="section animate animate-delay-3">
       <h2>Skills</h2>
       <div class="skills">
         <span>People Management</span>
-        <span>Long-Term Strategy</span>
+        <span>Long-Term Strategy & Roadmapping</span>
         <span>Org Building & Mentorship</span>
         <span>Product Ownership</span>
-        <span>Agile — Scrum & Kanban</span>
+        <span>Agile Leadership — Scrum & Kanban</span>
+        <span>Operational Efficiency</span>
         <span>Stakeholder Alignment</span>
+        <span>Complex Problem Solving</span>
         <span>Artificial Intelligence</span>
         <span>Machine Learning</span>
         <span>Large Language Models</span>
         <span>Google Gemini</span>
+        <span>Anthropic Claude</span>
+        <span>Open-Weight Models (vLLM)</span>
         <span>Embeddings</span>
+        <span>Agentic AI & Autonomous Code Generation</span>
+        <span>Spec-Driven Development</span>
         <span>Application Architecture & System Design</span>
-        <span>Python</span>
-        <span>Java</span>
-        <span>Scala</span>
-        <span>React</span>
-        <span>.NET</span>
         <span>Google Cloud Platform</span>
         <span>Cloud Run</span>
         <span>GKE</span>
         <span>BigQuery</span>
+        <span>Python</span>
         <span>Kubernetes</span>
         <span>Apache Kafka</span>
         <span>AWS</span>
         <span>Terraform</span>
         <span>CI/CD</span>
+        <span>Language-Agnostic Engineering</span>
       </div>
     </div>
 
@@ -361,32 +418,41 @@
             </div>
           </div>
           <div class="exp-role">
-            <span class="role-title">Team Leader — AI Platforms & Product Development</span>
+            <span class="role-title">Senior Team Leader — AI Platforms & Product Development</span>
             <span class="role-dates">Jul 2024 – Present</span>
           </div>
-          <p class="role-desc">Lead a 20-person organization owning strategy, roadmap, and delivery of UWM's enterprise AI automation platform (BOLT).</p>
+          <p class="role-desc">Lead an over 20-person organization—principal and senior software engineers, senior business analysts, a product owner, and a team lead—owning strategy, roadmap, and delivery of two enterprise AI platforms built from zero: a multi-tenant business automation platform whose largest client is UWM's flagship underwriting product, BOLT, and a new agentic software development platform.</p>
           <ul>
-            <li>Built UWM's document-interrogation automation platform from the ground up — now the largest enterprise deployment of Google LLMs at the company.</li>
-            <li>Delivered ~$4.1M in annualized savings ($346K/month) from a strategic platform optimization.</li>
-            <li>Returned ~1M+ underwriter hours per year to the business (~500 full-time work-years of reclaimed capacity).</li>
-            <li>Architected ML solutions using Google Gemini, custom-trained models, and embeddings across Title Review, Assets, Pay Stubs, Credit Reports, and Appraisals.</li>
+            <li>Conceived and built UWM's document-interrogation automation platform from the ground up — now the largest enterprise deployment of Google LLMs at the company — converting manual, document-heavy underwriting reviews into real-time, AI-driven decision support.</li>
+            <li>Identified the opportunity as an individual contributor and authored the founding business proposal to VP/AVP stakeholders, securing executive sponsorship to stand up the team from zero — then hired and structured the 20-person org built from it.</li>
+            <li>Delivered ~$4.1M in annualized savings ($346K/month) from a single platform optimization, with additional millions realized through loan-quality and underwriter-efficiency gains.</li>
+            <li>Returned ~1 million+ underwriter hours per year to the business — 10 hours/week across ~2,000 underwriters — roughly 500 full-time work-years of reclaimed capacity.</li>
+            <li>Expanded the platform from a single underwriting use case into a multi-tenant service supporting client products enterprise-wide, handling any document-based review requiring complex question answering.</li>
+            <li>Founded a second platform from zero in 2026 — an agentic, spec-driven development platform that ingests specification documents and autonomously produces production-ready code — extending the build-from-zero playbook into software engineering.</li>
+            <li>Delivered ~500 pull requests within the first month of pilot, targeting step-change developer throughput across UWM's ~2,000 IT professionals.</li>
+            <li>Architected the platform model-agnostic — interchangeable Google Gemini, Anthropic Claude, and self-hosted open-weight models served via vLLM — eliminating vendor lock-in and routing workloads on cost and performance.</li>
+            <li>Architected ML solutions using Google Gemini, custom-trained models, and embeddings to automate Title Review, Assets, Purchase Agreements, Pay Stubs, Credit Reports, and Appraisals.</li>
+            <li>Serve concurrently as Product Owner (vision, prioritization, roadmap) and Scrum Master (Agile delivery, incremental releases).</li>
+            <li>Own people leadership across both platforms — hiring, career development, and performance management for principal/senior engineers, business analysts, and a team lead — standing up a second team for the new platform while running the existing 20-person org.</li>
           </ul>
           <div class="exp-role">
             <span class="role-title">Software Developer III</span>
             <span class="role-dates">Mar 2024 – Jul 2024</span>
           </div>
+          <p class="role-desc">Member of the BOLT Architects team; led multiple product- and organization-critical initiatives.</p>
           <ul>
-            <li>Led currency-management efforts reducing technical debt and eliminating security vulnerabilities across BOLT services.</li>
+            <li>Drove currency-management efforts that cut technical debt and eliminated security vulnerabilities across multiple BOLT services.</li>
             <li>Led a cohort of summer team members through a full-stack microservices project (React + .NET 8), achieving 75% retention.</li>
+            <li>Acted as technical liaison to vendor partners (Qarik/Egen), owning environment setup and integration; mentored developers across frameworks and tooling.</li>
           </ul>
           <div class="exp-role">
             <span class="role-title">Data Platform Engineer II</span>
             <span class="role-dates">Mar 2023 – Mar 2024</span>
           </div>
           <ul>
-            <li>Administered an on-premises Confluent Kafka platform at 99.99% availability, processing billions of messages daily.</li>
-            <li>Supported 1,900+ technology professionals integrating with Kafka, Redis, and Qlik; ran the Redis cache at ~4,000 ops/second.</li>
-            <li>Pioneered open-source Kafka adoption and migrated Kafka connectors into Kubernetes via custom Python tooling.</li>
+            <li>Administered an on-premises Confluent Kafka platform at 99.99% availability, processing billions of messages daily across the organization's intranet.</li>
+            <li>Supported 1,900+ technology professionals integrating with Kafka, Redis, and Qlik; ran the Redis distributed cache platform at ~4,000 operations/second.</li>
+            <li>Pioneered open-source Kafka adoption to cut vendor dependency and migrated Kafka connectors into Kubernetes via custom Python tooling.</li>
           </ul>
         </div>
 
@@ -403,8 +469,9 @@
           </div>
           <ul>
             <li>Sole maintainer of a full-stack trading application ecosystem at 99.999% availability within an AWS Kubernetes cluster.</li>
-            <li>Designed and built Java/Spring gateways bridging legacy trading frameworks to NASDAQ's consolidated Fusion platform.</li>
-            <li>Delivered back-end services integrating multiple international NASDAQ exchanges through transatlantic (US–Europe) collaboration.</li>
+            <li>Built Java/Spring gateways bridging legacy trading frameworks to NASDAQ's consolidated Fusion platform; introduced Scala/Java code generators driven by a domain DDL file system.</li>
+            <li>Modernized the ecosystem end-to-end, migrating 1990s-era trading software to current Scala (2.8, 3.0) and Java (11, 16) with zero uptime loss during the transition.</li>
+            <li>Delivered back-end services integrating multiple international NASDAQ exchanges through cross-border collaboration.</li>
           </ul>
         </div>
       </div>
@@ -449,6 +516,8 @@
     <div class="section animate animate-delay-5" style="animation-delay:0.6s">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:prakharsaxena.social@gmail.com" style="color: var(--accent); text-decoration: none;">prakharsaxena.social@gmail.com</a></p>
+      <p class="role-desc">Detroit Metro, Michigan</p>
+      <p class="role-desc">U.S. Permanent Resident (Green Card) — no visa sponsorship required</p>
     </div>
 
     <footer>
