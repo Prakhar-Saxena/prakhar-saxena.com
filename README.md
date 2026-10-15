@@ -18,12 +18,13 @@ following GitHub's guide to [managing a custom domain](https://docs.github.com/e
 ## Link previews
 
 The `og:*` and `twitter:*` meta tags in `index.html` control the title, description, and image shown when the link is shared.
-The preview image is the profile photograph. After changing it, refresh cached previews with
+The preview image is `Prakhar Saxena - Profile Photograph - Square Cropped.jpg`, a square crop of the profile photograph centred on the face. After changing it, refresh cached previews with
 [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/) or the
 [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/).
 
 ## Files
 
 - `index.html`: the whole site
-- `Prakhar Saxena - Profile Photograph.jpg`: avatar on the page and link-preview image
+- `Prakhar Saxena - Profile Photograph.jpg`: avatar on the page
+- `Prakhar Saxena - Profile Photograph - Square Cropped.jpg`: square link-preview image
 - `Prakhar Saxena - Resume.pdf`: resume linked from the page
